@@ -14,4 +14,4 @@ export const rejectionMail = (username, details) => ({
     <p>Hello <strong>${username}</strong>,</p>
     <p style="color: red;">Unfortunately, your request for <strong>${details}</strong> has been <strong>rejected</strong>.</p>
   `,
-});
+}); 
