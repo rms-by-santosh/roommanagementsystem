@@ -32,10 +32,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 // ✅ API ROUTES
-app.use("/api/users", userRoutes);
-app.use("/api/sheets", sheetRoutes);
-app.use("/api/requests", requestRoutes);
-app.use("/api/notify", requestNotifyRoutes); // ✅ placed BEFORE error handler
+app.use("/users", userRoutes);
+app.use("/sheets", sheetRoutes);
+app.use("/requests", requestRoutes);
+app.use("/notify", requestNotifyRoutes); // ✅ placed BEFORE error handler
 
 // ✅ ERROR HANDLER (must be last)
 app.use(errorHandler);
