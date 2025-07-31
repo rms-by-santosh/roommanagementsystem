@@ -22,7 +22,7 @@ const app = express();
 // CORS setup
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "https://room-ms.netlify.app",
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
     credentials: true,
   })
 );
